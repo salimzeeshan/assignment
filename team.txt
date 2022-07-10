@@ -1,7 +1,7 @@
 Assignment
 
-Umer Ahmad
-Rakesh
+Umer Ahmad - Signup
+Rakesh - Navbar
 Nitish Kumar Thakur
 Sanjay Bairwa
 Mohammad Zeeshan Salim - Created the repo

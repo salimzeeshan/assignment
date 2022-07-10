@@ -5,10 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .navbar{
+            height: auto;
+            background-color:#282A35;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0px;
+        }
+        .navbar ul{
+            margin-top: 5px;
+            display:flex;
+            overflow: auto;
+        }
+        .navbar ul li{
+            
+            display: inline-block;
+            list-style: none;
+             line-height: 50px;
+            margin: 3px 30px;
+        }
+        .navbar ul li:nth-child(1){
+            margin-right: auto;
+            margin-left: 0;
+        }
+        .navbar ul li a{
+             font-size: 25px;    
+            position: relative;
+            display: block;
+            padding: 5px 0;
+            color:white;
+            text-decoration: none;
+        }
+        .navbar ul li a:before{
+                  position: absolute;
+                  content: '';
+                  left:0;
+                  bottom:0;
+                  height: 7px;
+                  width: 100%;
+                  background:green;
+                  transform: scaleX(0);
+                  transform-origin:right ;
+                  transition: transform .4s linear;
+        }
+          .navbar ul li a:hover:before{
+                    transform: scaleX(1);
+                    transform-origin:left ;
+                    background-color:green ;
+          }
+          .navbar ul li a:hover{
+            color: red;
+          }
+
+          @media  (min-width:481px) and (max-width:720px) {
+            .navbar{
+                display: inline-block;
+               /* background-color:blueviolet;*/
+                width: 100%;
+               
+            }
+            
+           .navbar ul li {
+            margin: auto 20px ;
+        
+            }
+            .navbar ul li:nth-child(1){
+            
+            margin-left: -25px;
+            
+            
+            }
+            .navbar ul li a{
+                font-size: 22px;
+            }
+            
+          }
+          @media all and (min-width:300px) and (max-width:480px) {
+            .navbar{
+                display: block;
+               /* background-color: yellow;*/
+                width: 100%;
+            } 
+              .navbar  ul  li{
+                margin: auto  ;
+              }
+              .navbar ul li:nth-child(1){
+                margin-left: -20px;
+              }
+              .navbar  ul li a{
+                font-size: 17px;
+              }
+            
+          }
+
+    
+    </style>
 </head>
 <body>
-    <div>
-        add
-    </div>
+    <header>
+      <nav class="navbar">
+         <ul>
+            <li>
+               <a href="http://google.com"> Reebok </a> 
+            </li>
+            <li>
+                <a href="http://google.com">Men</a>
+                
+            </li>
+            <li>
+                <a href="http://google.com"> Women</a>
+            </li>
+            <li>
+                <a href="http://google.com"> Login</a>
+                
+            </li>
+            <li>
+                <a href="http://google.com">Signup</a>
+                
+            </li>
+         </ul>
+
+      </nav>
+   </header>
+    
 </body>
 </html>
